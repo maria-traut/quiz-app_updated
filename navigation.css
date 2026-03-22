@@ -1,0 +1,37 @@
+.navbar {
+  background-color: rgb(155, 109, 216);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.nav-icon--homepage {
+  background-color: rgb(247, 125, 145);
+}
+
+.nav-icon--homepage,
+.nav-icon--bookmarks,
+.nav-icon--profile {
+  padding: 1.25em;
+  border-radius: 1.25em;
+}
+
+.nav-icon--bookmarks:hover {
+  background-color: rgb(247, 125, 145);
+}
+
+.nav-icon--profile:hover {
+  background-color: rgb(247, 125, 145);
+}
+
+.nav-links img {
+  height: 3em;
+  width: 3em;
+}
