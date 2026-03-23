@@ -3,6 +3,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  transition: transform 0.5s ease;
+  height: 7rem;
 }
 
 .nav-links {
@@ -19,8 +21,8 @@
 .nav-icon--homepage,
 .nav-icon--bookmarks,
 .nav-icon--profile {
-  padding: 1.25em;
-  border-radius: 1.25em;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .nav-icon--bookmarks:hover {
@@ -32,6 +34,16 @@
 }
 
 .nav-links img {
-  height: 3em;
-  width: 3em;
+  height: 3rem;
+  width: 3rem;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 0;
+  background-color: rgb(43, 3, 90);
+  transition: width 0.05s ease;
 }
