@@ -13,33 +13,6 @@
   box-sizing: border-box;
 }
 
-/*
-h1,
-  line-height: 1.2;
-}
-
-
-
-body.dark {
-  --background: var(--black);
-  --foreground: var(--white);
-}
-
-button {
-  font-size: var(--fs-400);
-  font-family: var(--ff-primary);
-  color: var(--black);
-}
-
-
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-*/
-
 body {
   display: grid;
 }
