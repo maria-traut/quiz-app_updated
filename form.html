@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="./assets/music_violet.png" type="music-note-icon" />
+    <title>Music Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./form.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Music Quiz</h1>
+      <h2 class="header__subtitle">My Questions</h2>
+    </header>
+
+    <main class="main-content">
+      <form data-js="form">
+        <fieldset>
+          <label for="new-question" data-js="new-question">My question</label>
+          <input
+            type="text"
+            name="newQuestion"
+            id="new-question"
+            placeholder="Enter new question here."
+            max="150"
+            data-js="new-question-input"
+          />
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
+
+          <label for="last-name">My answer</label>
+          <input
+            type="text"
+            name="newAnswer"
+            id="new-answer"
+            placeholder="Enter corresponding answer here."
+            max="150"
+            data-js="new-question-input"
+          />
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
+          <label for="tag">Tag</label>
+          <input type="text" />
+  <button type="submit">Submit</button>
+        </fieldset>
+
+      <nav class="navbar" data-js="nav">
+        <ul class="nav-links">
+          <li class="nav-icon">
+            <a href="index.html">
+              <img src="./assets/home.png" alt="homepage" />
+            </a>
+          </li>
+          <li class="nav-icon">
+            <a href="bookmarks.html">
+              <img src="./assets/ribbon_dark.png" alt="bookmarks" />
+            </a>
+          </li>
+          <li class="nav-icon--active">
+            <a href="form.html">
+              <img src="./assets/add.png" alt="added-questions" />
+            </a>
+          </li>
+          <li class="nav-icon">
+            <a href="profile.html">
+              <img src="./assets/user-avatar.png" alt="profile" />
+            </a>
+          </li>
+        </ul>
+        <div class="progress-bar" data-js="progress-bar"></div>
+      </nav>
+    </main>
+  </body>
+</html>

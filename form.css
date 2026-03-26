@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: var(--background-thirdly);
+  border-radius: 0.5rem;
+  padding: 1.5em;
+  margin: 3em 2em;
+  border: 1px solid rgb(112, 103, 187);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  color: var(--text-color-secondary);
+}
+
+.remaining-characters {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+button {
+  margin: auto;
+  width: fit-content;
+}
+
+input {
+  font-style: italic;
+}
+
+input[type="submit"] {
+  margin: auto;
+  width: fit-content;
+  font-style: italic;
+}
+
+textarea {
+  width: fit-content;
+  border-radius: 1em;
+}

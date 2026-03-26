@@ -2,7 +2,5 @@
 @import url("./header.css");
 @import url("./main.css");
 @import url("./navigation.css");
-
-/* Wo füge ich den Link ein?
-<a href="https://www.flaticon.com/free-icons/disco-dance" title="disco dance icons">Disco dance icons created by Freepik - Flaticon</a>
-*/
+@import url("./profile.css");
+@import url("./form.css");

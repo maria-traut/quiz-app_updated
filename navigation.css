@@ -14,23 +14,15 @@
   margin: 0;
 }
 
-.nav-icon--homepage {
-  background-color: var(--background-secondary);
-}
-
-.nav-icon--homepage,
-.nav-icon--bookmarks,
-.nav-icon--profile {
+.nav-icon {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
-.nav-icon--bookmarks:hover {
-  background-color: var(--background-secondary);
-}
-
-.nav-icon--profile:hover {
-  background-color: var(--background-secondary);
+.nav-icon--active {
+  background-color: var(--background-thirdly);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .nav-links img {
@@ -44,6 +36,6 @@
   left: 0;
   height: 0.5rem;
   width: 0;
-  background-color: var(--background-secondary);
+  background-color: var(--background-thirdly);
   transition: width 0.05s ease;
 }

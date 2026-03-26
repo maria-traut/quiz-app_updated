@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="./assets/disco-ball.png" type="disco-ball-icon" />
+    <link rel="icon" href="./assets/music_violet.png" type="music-note-icon" />
     <title>Music Quiz</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" defer></script>
@@ -20,18 +20,23 @@
 
     <main class="main-content">
       <ul class="question-card__list">
-        <div class="question-card">
+        <div class="question-card" data-js="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
+            data-js="question-card__bookmark"
           />
           <h3 class="question-card__title">
             Which famous song by Elton John was rewritten in 1997 as a tribute
             to Princess Diana?
           </h3>
-          <p class="question-card__answer">Candle in the Wind</p>
-          <button class="answer-button">Show answer</button>
+          <p class="question-card__answer" data-js="question-card__answer">
+            Candle in the Wind
+          </p>
+          <button class="answer-button" data-js="answer-button">
+            Show answer
+          </button>
           <ul class="category-list">
             <li><button class="category">Elton John</button></li>
             <li><button class="category">category 2</button></li>
@@ -42,7 +47,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -60,7 +65,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -80,7 +85,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -98,7 +103,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -116,7 +121,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -134,7 +139,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -152,7 +157,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -170,7 +175,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -189,7 +194,7 @@
         <div class="question-card">
           <img
             class="question-card__bookmark"
-            src="./assets/disco-ball.png"
+            src="./assets/ribbon_dark.png"
             alt="bookmark__disco-ball"
           />
           <h3 class="question-card__title">
@@ -208,19 +213,24 @@
 
       <nav class="navbar" data-js="nav">
         <ul class="nav-links">
-          <li class="nav-icon--homepage">
+          <li class="nav-icon--active">
             <a href="index.html">
-              <img src="./assets/house.png" alt="homepage" />
+              <img src="./assets/home.png" alt="homepage" />
             </a>
           </li>
-          <li class="nav-icon--bookmarks">
+          <li class="nav-icon">
             <a href="bookmarks.html">
-              <img src="./assets/disco-ball.png" alt="bookmarks" />
+              <img src="./assets/ribbon_dark.png" alt="bookmarks" />
             </a>
           </li>
-          <li class="nav-icon--profile">
+          <li class="nav-icon">
+            <a href="form.html">
+              <img src="./assets/add.png" alt="added-questions" />
+            </a>
+          </li>
+          <li class="nav-icon">
             <a href="profile.html">
-              <img src="./assets/user_strong.png" alt="profile" />
+              <img src="./assets/user-avatar.png" alt="profile" />
             </a>
           </li>
         </ul>
