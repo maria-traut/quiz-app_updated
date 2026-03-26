@@ -22,14 +22,25 @@ form.addEventListener("submit", (event) => {
 
 */
 
-/* characters left */
+/* characters left - my question */
 const form = document.querySelector('[data-js="form"]');
 const messageInput = document.querySelector('[data-js="new-question-input"]');
 const charactersLeftElement = document.querySelector(
   '[data-js="remaining-characters"]',
 );
+
 messageInput.addEventListener("input", (event) => {
   charactersLeftElement.textContent = 150 - messageInput.value.length;
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formElement = event.target;
+  const formData = new FormData(formElement);
+  const data = Object.fromEntries(formData);
+  console.log(data);
+  formElement.reset();
+  formElement.elements.newQuestion.focus();
 });
 
 /* submit button 
