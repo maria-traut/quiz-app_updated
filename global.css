@@ -1,16 +1,45 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+:root {
+  --font-family: sans-serif;
+  --text-color-primary: rgb(243, 218, 234);
+  --text-color-secondary: rgb(28, 25, 54);
+  --background-primary: rgb(112, 103, 187);
+  --background-secondary: rgb(243, 218, 234);
+  --background-thirdly: rgb(196, 186, 245);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+h1,
+  line-height: 1.2;
+}
+
+
+
+body.dark {
+  --background: var(--black);
+  --foreground: var(--white);
+}
+
+button {
+  font-size: var(--fs-400);
+  font-family: var(--ff-primary);
+  color: var(--black);
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+*/
 
 body {
   display: grid;
-}
-
-.main-content {
-  margin-top: 150px;
-  margin-bottom: 100px;
-  background-color: rgb(223, 212, 240);
 }
