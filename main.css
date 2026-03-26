@@ -48,7 +48,6 @@ body.dark {
 
 .question-card__answer {
   font-style: italic;
-  /*   display: none ??? */
 }
 
 .answer-button {
@@ -82,7 +81,7 @@ body.dark {
 }
 
 .active-bookmark {
-  background: hotpink;
+  background: rgb(247, 139, 157);
 }
 
 .active-nav {
