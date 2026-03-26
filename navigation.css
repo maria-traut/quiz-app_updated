@@ -36,6 +36,6 @@
   left: 0;
   height: 0.5rem;
   width: 0;
-  background-color: var(--background-secondary);
+  background-color: var(--background-thirdly);
   transition: width 0.05s ease;
 }

@@ -82,7 +82,7 @@ body.dark {
 }
 
 .active-bookmark {
-  background: hotpink;
+  background: rgb(247, 160, 174);
 }
 
 .active-nav {
