@@ -10,12 +10,6 @@ body {
   background-color: var(--background-secondary);
 }
 
-/*
-body.dark {
-  background-color: var(--black);
-}
-*/
-
 .question-card__list {
   padding: 1rem;
   max-width: 45rem;
