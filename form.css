@@ -1,18 +1,13 @@
-body {
-  font-family: var(--font-family);
-  color: var(--text-color-secondary);
-  margin: 0;
-}
-
 form {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  background-color: var(--background-thirdly);
+  background-color: var(--tertiary);
   border-radius: 0.5rem;
   padding: 1.5em;
   margin: 3em 2em;
   border: 1px solid rgb(112, 103, 187);
+  box-shadow: 0 2px 5px var(--primary);
 }
 
 fieldset {
@@ -21,7 +16,7 @@ fieldset {
   gap: 10px;
   padding: 10px;
   border: none;
-  color: var(--text-color-secondary);
+  color: var(--text-secondary);
 }
 
 label {
@@ -32,30 +27,31 @@ label {
 .remaining-characters {
   font-size: 0.8rem;
   text-align: right;
-  color: var(--background-primary);
+  color: var(--primary);
   margin: 0;
 }
 
 .submit-button {
   margin: 1rem auto auto auto;
-  padding: 0.5rem;
+  padding: 1rem;
   width: fit-content;
   border-radius: 0.25rem;
-  background-color: var(--background-primary);
+  background-color: var(--primary);
   color: rgb(247, 160, 174);
+  display: block;
   border: none;
 }
 
 textarea {
-  font-family: var(--font-family);
+  font-family: var(--text);
   font-style: italic;
   border-radius: 0.25rem;
-  border-color: var(--background-primary);
+  border-color: var(--primary);
   background-color: rgb(250, 240, 246);
 }
 
 input {
   border-radius: 0.25rem;
-  border: 1px solid var(--background-primary);
+  border: 1px solid var(--primary);
   background-color: rgb(250, 240, 246);
 }

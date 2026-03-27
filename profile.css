@@ -8,11 +8,11 @@
   position: relative;
   gap: 0.5em;
   padding: 3em 1.5em 1.5em 1.5em;
-  margin: 1em 1em;
-  background-color: var(--background-thirdly);
+  margin: 1em 1em 1.5em 1em;
+  background-color: var(--tertiary);
   border-radius: 0.5rem;
-  border: 1px solid var(--background-primary);
-  box-shadow: 0 2px 5px var(--background-secondary);
+  border: 1px solid var(--primary);
+  box-shadow: 0 2px 5px var(--secondary);
 }
 
 .profile-card__picture {
@@ -32,4 +32,18 @@
 .profile-card__aboute-me {
   margin: 0;
   padding: 1.5em 0;
+}
+
+.settings-card {
+  gap: 0.5em;
+  padding: 3em 1.5em 1.5em 1.5em;
+  margin: 1em 1em;
+  background-color: var(--tertiary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary);
+  box-shadow: 0 2px 5px var(--secondary);
+}
+
+.settings-card__settlings-list {
+  list-style: none;
 }
