@@ -1,15 +1,17 @@
-/* bookmark button toggle
-const bookmarkButtonActive = */
+/* bookmark toggle button
+const bookmarkButtonActive =
+const imageSrc = "./assets/ribbon_active_salmon_dark";
+*/
 
 const bookmarkButton = document.querySelector(
   '[data-js="question-card__bookmark"]',
 );
-const imageSrc = "./assets/ribbon_active_salmon_dark";
+
 bookmarkButton.addEventListener("click", () => {
   bookmarkButton.classList.toggle("active-bookmark");
 });
 
-/* answer button toggle
+/* answer toggle button
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event
 */
 

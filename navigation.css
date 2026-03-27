@@ -3,14 +3,19 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  transition: transform 0.5s ease;
+
   height: 6rem;
 }
+/*
+ transition: transform 0.5s ease;
+ */
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
   margin: 0;
 }
 
@@ -35,7 +40,7 @@
   bottom: 0;
   left: 0;
   height: 0.5rem;
-  width: 0;
+  width: 1%;
   background-color: var(--background-thirdly);
   transition: width 0.05s ease;
 }

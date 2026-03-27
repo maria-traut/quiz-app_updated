@@ -1,0 +1,35 @@
+.profile-card__list {
+  padding: 1rem;
+  max-width: 45rem;
+  margin: 1rem auto 0.5rem auto;
+}
+
+.profile-card {
+  position: relative;
+  gap: 0.5em;
+  padding: 3em 1.5em 1.5em 1.5em;
+  margin: 1em 1em;
+  background-color: var(--background-thirdly);
+  border-radius: 0.5rem;
+  border: 1px solid var(--background-primary);
+  box-shadow: 0 2px 5px var(--background-secondary);
+}
+
+.profile-card__picture {
+  position: absolute;
+  top: 1.5em;
+  left: 1.8em;
+  height: 6em;
+  width: auto;
+  border-radius: 50%;
+}
+
+.profile-card__title {
+  font-size: 1.25em;
+  text-align: right;
+}
+
+.profile-card__aboute-me {
+  margin: 0;
+  padding: 1.5em 0;
+}

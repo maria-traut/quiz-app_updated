@@ -22,35 +22,36 @@
       <form data-js="form">
         <fieldset>
           <label for="new-question" data-js="new-question">My question</label>
-          <input
+          <textarea
             type="text"
             name="newQuestion"
             id="new-question"
             placeholder="Enter new question here."
             max="150"
             data-js="new-question-input"
-          />
+          ></textarea>
           <p class="remaining-characters">
             <span data-js="remaining-characters">150</span> characters left
           </p>
 
           <label for="last-name">My answer</label>
-          <input
+          <textarea
             type="text"
             name="newAnswer"
             id="new-answer"
-            placeholder="Enter corresponding answer here."
+            placeholder="Enter answer here."
             max="150"
-            data-js="new-question-input"
-          />
+            data-js="new-answer-input"
+          ></textarea>
           <p class="remaining-characters">
-            <span data-js="remaining-characters">150</span> characters left
+            <span data-js="remaining-characters">150</span>
+            characters left
           </p>
           <label for="tag">Tag</label>
-          <input type="text" />
-  <button type="submit">Submit</button>
+          <input name="newTag" type="text" />
+          <button class="submit-button" type="submit">Submit</button>
         </fieldset>
-
+      </form>
       <nav class="navbar" data-js="nav">
         <ul class="nav-links">
           <li class="nav-icon">

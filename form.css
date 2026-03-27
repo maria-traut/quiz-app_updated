@@ -1,3 +1,9 @@
+body {
+  font-family: var(--font-family);
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -18,27 +24,38 @@ fieldset {
   color: var(--text-color-secondary);
 }
 
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .remaining-characters {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: right;
+  color: var(--background-primary);
+  margin: 0;
 }
 
-button {
-  margin: auto;
+.submit-button {
+  margin: 1rem auto auto auto;
+  padding: 0.5rem;
   width: fit-content;
-}
-
-input {
-  font-style: italic;
-}
-
-input[type="submit"] {
-  margin: auto;
-  width: fit-content;
-  font-style: italic;
+  border-radius: 0.25rem;
+  background-color: var(--background-primary);
+  color: rgb(247, 160, 174);
+  border: none;
 }
 
 textarea {
-  width: fit-content;
-  border-radius: 1em;
+  font-family: var(--font-family);
+  font-style: italic;
+  border-radius: 0.25rem;
+  border-color: var(--background-primary);
+  background-color: rgb(250, 240, 246);
+}
+
+input {
+  border-radius: 0.25rem;
+  border: 1px solid var(--background-primary);
+  background-color: rgb(250, 240, 246);
 }
