@@ -14,18 +14,14 @@ messageInput.addEventListener("input", (event) => {
 const form = document.querySelector('[data-js="form"]');
 
 const newQuestionCard = document.createElement("article");
-const newImg = document.createElement("img");
 const newQuestion = document.createElement("h3");
 const newAnswer = document.createElement("p");
-const newAnswerButton = document.createElement("button");
 const newList = document.createElement("ul");
 const newTag = document.createElement("li");
 
 newQuestionCard.classList.add("question-card");
-newImg.classList.add("question-card__bookmark");
 newQuestion.classList.add("question-card__question");
 newAnswer.classList.add("question-card__answer");
-newAnswerButton.classList.add("answer-button");
 newList.classList.add("category-list");
 newTag.classList.add("input");
 
@@ -40,14 +36,8 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(formElement);
   const data = Object.fromEntries(formData);
   console.log(data);
-  newQuestionCard.append(
-    newImg,
-    newQuestion,
-    newAnswer,
-    newAnswerButton,
-    newList,
-    newTag,
-  );
+  newQuestionCard.append(newImg, newQuestion, newAnswer, newList);
+  newList.append(newTag);
   document.body.append(newQuestionCard);
   formElement.reset();
   formElement.elements.newQuestion.focus();
