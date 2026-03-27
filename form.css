@@ -1,10 +1,16 @@
+body {
+  font-family: var(--font-family);
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
   background-color: var(--background-thirdly);
   border-radius: 0.5rem;
-  padding: 1em;
+  padding: 1.5em;
   margin: 3em 2em;
   border: 1px solid rgb(112, 103, 187);
 }
@@ -48,14 +54,8 @@ textarea {
   background-color: rgb(250, 240, 246);
 }
 
-textarea[type="submit"] {
-  margin: auto;
-  width: fit-content;
-  font-style: italic;
-}
-
 input {
   border-radius: 0.25rem;
-  border-color: var(--background-primary);
+  border: 1px solid var(--background-primary);
   background-color: rgb(250, 240, 246);
 }

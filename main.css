@@ -18,13 +18,14 @@ body {
 }
 
 .question-card {
+  position: relative;
   gap: 0.5em;
-  background-color: var(--background-thirdly);
-  border-radius: 0.5rem;
   padding: 3em 1.5em 1.5em 1.5em;
   margin: 1em 1em;
-  border: 1px solid rgb(112, 103, 187);
-  position: relative;
+  background-color: var(--background-thirdly);
+  border-radius: 0.5rem;
+  border: 1px solid var(--background-primary);
+  box-shadow: 0 2px 5px var(--background-secondary);
 }
 
 .question-card__bookmark {
@@ -35,7 +36,7 @@ body {
   width: 2.5em;
 }
 
-.question-card__title {
+.question-card__question {
   font-size: 1.25em;
   margin: 0 0 2rem;
 }
@@ -60,6 +61,8 @@ body {
   list-style: none;
   flex-wrap: wrap;
   gap: 0.25rem;
+  padding: 0;
+  margin: 0;
 }
 
 .category {
