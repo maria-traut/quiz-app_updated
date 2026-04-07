@@ -1,6 +1,7 @@
 .profile-card__list {
   padding: 1rem;
   max-width: 45rem;
+<<<<<<< HEAD
   margin: 0 auto;
 }
 
@@ -29,4 +30,51 @@
   margin: 1em 1em;
   border: 1px solid rgb(112, 103, 187);
   position: relative;
+=======
+  margin: 1rem auto 0.5rem auto;
+}
+
+.profile-card {
+  position: relative;
+  gap: 0.5em;
+  padding: 3em 1.5em 1.5em 1.5em;
+  margin: 1em 1em 1.5em 1em;
+  background-color: var(--tertiary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary);
+  box-shadow: 0 2px 5px var(--secondary);
+}
+
+.profile-card__picture {
+  position: absolute;
+  top: 1.5em;
+  left: 1.8em;
+  height: 6em;
+  width: auto;
+  border-radius: 50%;
+}
+
+.profile-card__title {
+  font-size: 1.25em;
+  text-align: right;
+}
+
+.profile-card__aboute-me {
+  margin: 0;
+  padding: 1.5em 0;
+}
+
+.settings-card {
+  gap: 0.5em;
+  padding: 3em 1.5em 1.5em 1.5em;
+  margin: 1em 1em;
+  background-color: var(--tertiary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary);
+  box-shadow: 0 2px 5px var(--secondary);
+}
+
+.settings-card__settlings-list {
+  list-style: none;
+>>>>>>> fcd789b3f82104891d04062bcbaa23b06deac859
 }

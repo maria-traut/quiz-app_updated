@@ -1,5 +1,30 @@
-/* progress bar */
+/* bookmark toggle button */
+const bookmarkButton = document.querySelector(
+  '[data-js="question-card__bookmark"]',
+);
 
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButton.classList.toggle("active-bookmark");
+});
+
+/* answer toggle button
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event
+*/
+const answerButton = document.querySelector('[data-js="answer-button"]');
+const answerParagraph = document.querySelector(
+  '[data-js="question-card__answer"]',
+);
+
+answerButton.addEventListener("click", () => {
+  answerParagraph.classList.toggle("hidden");
+  if (answerButton.textContent === "Show answer") {
+    answerButton.textContent = "Hide answer";
+  } else {
+    answerButton.textContent = "Show answer";
+  }
+});
+
+/* progress bar (copied from challenge!) */
 const progressBar = document.querySelector('[data-js="progress-bar"]');
 
 function calculateScrollPercentage() {
@@ -13,34 +38,3 @@ document.addEventListener("scroll", () => {
   const scrollPosition = calculateScrollPercentage();
   progressBar.style.width = `${scrollPosition}%`;
 });
-
-/* answer button toggle */
-
-const answerButton = document.querySelector('[data-js="answer-button"]');
-const answerParagraph = document.querySelector(
-  '[data-js="question-card__answer"]',
-);
-
-answerButton.addEventListener("click", () => {
-  answerParagraph.classList.toggle("hidden");
-});
-
-/* bookmark button toggle */
-const bookmarkButton = document.querySelector(
-  '[data-js="question-card__bookmark"]',
-);
-const bookmarkButtonActive = bookmarkButton.addEventListener("click", () => {
-  bookmarkButton.classList.toggle("active-bookmark");
-});
-
-/* navigation mouseover */
-
-/*
-const answerButtonShow = "Show answer";
-const answerButtonHide = "Hide answer";
-    let answerButtonShow = "Show answer";
-  let answerButtonHide = "Hide answer";
-  const answerButtonText = answerButtonShow;
-  answerButtonShow = answerButtonHide;
-  answerButtonHide = answerButtonText;
-  */

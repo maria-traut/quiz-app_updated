@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--background-primary);
+  background-color: var(--primary);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -11,6 +11,8 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
   margin: 0;
 }
 
@@ -20,7 +22,7 @@
 }
 
 .nav-icon--active {
-  background-color: var(--background-thirdly);
+  background-color: var(--tertiary);
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -35,7 +37,12 @@
   bottom: 0;
   left: 0;
   height: 0.5rem;
+<<<<<<< HEAD
   width: 0;
   background-color: var(--background-thirdly);
+=======
+  width: 1%;
+  background-color: var(--tertiary);
+>>>>>>> fcd789b3f82104891d04062bcbaa23b06deac859
   transition: width 0.05s ease;
 }
