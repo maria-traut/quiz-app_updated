@@ -6,6 +6,7 @@
 .question-card__list {
   padding: 1rem;
   margin: 1rem auto 0 auto;
+  list-style: none;
 }
 
 .question-card {
