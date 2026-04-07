@@ -31,10 +31,10 @@
             data-js="new-question-input"
           ></textarea>
           <p class="remaining-characters">
-            <span data-js="remaining-characters">150</span> characters left
+            <span data-js="question-character-count">150</span> characters left
           </p>
 
-          <label for="last-name">My answer</label>
+          <label for="new-answer">My answer</label>
           <textarea
             type="text"
             name="newAnswer"
@@ -44,14 +44,15 @@
             data-js="new-answer-input"
           ></textarea>
           <p class="remaining-characters">
-            <span data-js="remaining-characters">150</span>
+            <span data-js="answer-character-count">150</span>
             characters left
           </p>
           <label for="tag">Tag</label>
-          <input name="newTag" type="text" />
+          <input id="tag" name="newTag" type="text" data-js="new-tag-input" />
           <button class="submit-button" type="submit">Submit</button>
         </fieldset>
       </form>
+      <ul class="card-list" data-js="card-container"></ul>
       <nav class="navbar" data-js="nav">
         <ul class="nav-links">
           <li class="nav-icon">

@@ -1,8 +1,4 @@
-/* bookmark toggle button
-const bookmarkButtonActive =
-const imageSrc = "./assets/ribbon_active_salmon_dark";
-*/
-
+/* bookmark toggle button */
 const bookmarkButton = document.querySelector(
   '[data-js="question-card__bookmark"]',
 );
@@ -14,7 +10,6 @@ bookmarkButton.addEventListener("click", () => {
 /* answer toggle button
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event
 */
-
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const answerParagraph = document.querySelector(
   '[data-js="question-card__answer"]',
@@ -29,8 +24,7 @@ answerButton.addEventListener("click", () => {
   }
 });
 
-/* progress bar */
-
+/* progress bar (copied from challenge!) */
 const progressBar = document.querySelector('[data-js="progress-bar"]');
 
 function calculateScrollPercentage() {

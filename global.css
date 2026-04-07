@@ -1,10 +1,10 @@
 :root {
-  --font-family: sans-serif;
-  --text-color-primary: rgb(243, 218, 234);
-  --text-color-secondary: rgb(28, 25, 54);
-  --background-primary: rgb(112, 103, 187);
-  --background-secondary: rgb(243, 218, 234);
-  --background-thirdly: rgb(196, 186, 245);
+  --text: sans-serif;
+  --text-primary: rgb(243, 218, 234);
+  --text-secondary: rgb(28, 25, 54);
+  --primary: rgb(112, 103, 187);
+  --secondary: rgb(243, 218, 234);
+  --tertiary: rgb(196, 186, 245);
 }
 
 *,
@@ -68,4 +68,8 @@ img {
 
 body {
   display: grid;
+  font-family: var(--text);
+  color: var(--text-secondary);
+  background-color: var(--secondary);
+  margin: 0;
 }

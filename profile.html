@@ -20,7 +20,7 @@
 
     <main class="main-content">
       <ul class="profile-card__list">
-        <div class="profile-card">
+        <article class="profile-card">
           <img
             class="profile-card__picture"
             src="./assets/true_detective_rust_cohle.png"
@@ -35,18 +35,37 @@
             watch, I think, I endure - because that’s all there is.
           </p>
           <ul class="category-list">
-            <li><button class="category">My Questions</button></li>
-            <li><button class="category">My Bookmarks</button></li>
+            <li>
+              <button class="category">
+                <img
+                  src="./assets/add.png"
+                  alt="added-questions-icon"
+                  width="15"
+                  height="15"
+                />
+                My Questions
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                <img
+                  src="./assets/ribbon_dark.png"
+                  alt="bookmark-icon"
+                  width="15"
+                  height="15"
+                />
+                My Bookmarks
+              </button>
+            </li>
           </ul>
-        </div>
+        </article>
 
-        <div class="question-card">
-          <h3 class="question-card__title">Settings</h3>
-
-          <ul class="category-list">
+        <article class="settings-card">
+          <h3 class="settings-card__title">Settings</h3>
+          <ul class="settings-card__settlings-list">
             <li><button class="category">Darkmode</button></li>
           </ul>
-        </div>
+        </article>
       </ul>
 
       <nav class="navbar" data-js="nav">

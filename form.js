@@ -1,44 +1,108 @@
-/* characters left - my question 
+/* characters left - my question */
+
 const form = document.querySelector('[data-js="form"]');
-const messageInput = document.querySelector('[data-js="new-question-input"]');
-const charactersLeftElement = document.querySelector(
-  '[data-js="remaining-characters"]',
+const cardContainer = document.querySelector('[data-js="card-container"]');
+const questionInput = document.querySelector('[data-js="new-question-input"]');
+const answerInput = document.querySelector('[data-js="new-answer-input"]');
+const questionCounter = document.querySelector(
+  '[data-js="question-character-count"]',
+);
+const answerCounter = document.querySelector(
+  '[data-js="answer-character-count"]',
 );
 
-messageInput.addEventListener("input", (event) => {
-  charactersLeftElement.textContent = 150 - messageInput.value.length;
+questionInput.addEventListener("input", (event) => {
+  questionCounter.textContent = 150 - questionInput.value.length;
 });
-*/
+
+answerInput.addEventListener("input", (event) => {
+  answerCounter.textContent = 150 - answerInput.value.length;
+});
 
 /* submit button */
-const form = document.querySelector('[data-js="form"]');
-
-const newQuestionCard = document.createElement("article");
-const newQuestion = document.createElement("h3");
-const newAnswer = document.createElement("p");
-const newList = document.createElement("ul");
-const newTag = document.createElement("li");
-
-newQuestionCard.classList.add("question-card");
-newQuestion.classList.add("question-card__question");
-newAnswer.classList.add("question-card__answer");
-newList.classList.add("category-list");
-newTag.classList.add("input");
-
-newQuestion.textContent =
-  "Which 1975 song by Queen became a worldwide hit and is considered their breakthrough single?";
-newAnswer.textContent = "Bohemian Rhapsody";
-newTag.textContent = "Queen";
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formElement = event.target;
+
   const formData = new FormData(formElement);
   const data = Object.fromEntries(formData);
-  console.log(data);
-  newQuestionCard.append(newImg, newQuestion, newAnswer, newList);
-  newList.append(newTag);
-  document.body.append(newQuestionCard);
+
+  const newCard = Card(data);
+
+  cardContainer.append(newCard);
   formElement.reset();
   formElement.elements.newQuestion.focus();
 });
+
+function Card(cardData) {
+  const cardElement = document.createElement("li");
+  cardElement.className = "question-card__list";
+  cardElement.innerHTML = `<article class="question-card">
+          <img
+            class="question-card__bookmark"
+            src="./assets/ribbon_dark.png"
+            alt="bookmark__disco-ball"
+          />
+          <h3 class="question-card__question" data-js="question-card__question"></h3>
+          <p class="question-card__answer" data-js="question-card__answer"></p>
+          <button class="answer-button">Show answer</button>
+          <ul class="category-list" data-js="category-list">
+          </ul>
+        </article>`;
+
+  const questionDisplay = cardElement.querySelector(
+    '[data-js="question-card__question"]',
+  );
+  const answerDisplay = cardElement.querySelector(
+    '[data-js="question-card__answer"]',
+  );
+  const tagList = cardElement.querySelector('[data-js="category-list"]');
+
+  questionDisplay.textContent = cardData.newQuestion;
+  answerDisplay.textContent = cardData.newAnswer;
+
+  const newTag = document.createElement("li");
+  newTag.className = "category";
+  newTag.textContent = cardData.newTag;
+  tagList.append(newTag);
+  return cardElement;
+}
+
+// --v-- Only for Bonus Task --v--
+
+const answerButton = cardElement.querySelector('[data-js="answer-button"]');
+const bookmarkButton = cardElement.querySelector(
+  '[data-js="question-card__bookmark"]',
+);
+
+// Bookmark Interaction
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButton.classList.toggle("bookmark--active");
+});
+
+// Answer Display Toggling
+answerButton.addEventListener("click", () => {
+  const isAnswerVisible = answerDisplay.classList.contains(
+    "card__answer--active",
+  );
+
+  if (isAnswerVisible) {
+    answerDisplay.classList.remove("card__answer--active");
+    answerButton.textContent = "Show answer";
+  } else {
+    answerDisplay.classList.add("card__answer--active");
+    answerButton.textContent = "Hide answer";
+  }
+});
+
+// --^-- Only for Bonus Task --^--
+
+/* solution der social medie post challlenge - hilfreich für bonusaufgabe?
+
+function handleLikeButtonClick(event) {
+  const buttonElement = event.target;
+  buttonElement.classList.toggle("post__button--liked");
+}
+newAnswerButton.addEventListener("click", handleLikeButtonClick);
+*/
