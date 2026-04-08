@@ -42,7 +42,7 @@ function Card(cardData) {
           <img
             class="question-card__bookmark"
             src="./assets/ribbon_dark.png"
-            alt="bookmark__disco-ball"
+            alt="bookmark__ribbon-dark"
           />
           <h3 class="question-card__question" data-js="question-card__question"></h3>
           <p class="question-card__answer" data-js="question-card__answer"></p>
@@ -69,7 +69,9 @@ function Card(cardData) {
   return cardElement;
 }
 
-// --v-- Only for Bonus Task --v--
+/* Waiting to be implemented
+
+ --v-- Only for Bonus Task --v--
 
 const answerButton = cardElement.querySelector('[data-js="answer-button"]');
 const bookmarkButton = cardElement.querySelector(
@@ -96,13 +98,47 @@ answerButton.addEventListener("click", () => {
   }
 });
 
-// --^-- Only for Bonus Task --^--
+// --^-- Only for Bonus Task --^-- */
 
-/* solution der social medie post challlenge - hilfreich für bonusaufgabe?
+/* Test Fetch Data from Rick and Morty API
 
-function handleLikeButtonClick(event) {
-  const buttonElement = event.target;
-  buttonElement.classList.toggle("post__button--liked");
+async function Card() {
+  const response = await fetch("https://rickandmortyapi.com/api/character");
+  const data = await response.json();
+  const firstTen = data.results.slice(0, 10);
+  firstTen.forEach((person) => {
+    const cardElement = document.createElement("li");
+    cardElement.className = "question-card__list";
+    cardElement.innerHTML = `<article class="question-card">
+          <img
+            class="question-card__bookmark"
+            src="./assets/ribbon_dark.png"
+            alt="bookmark__disco-ball"
+          />
+          <h3 class="question-card__question" data-js="question-card__question"></h3>
+          <p class="question-card__answer" data-js="question-card__answer"></p>
+          <button class="answer-button">Show answer</button>
+        </article>`;
+
+    const questionDisplay = cardElement.querySelector(
+      '[data-js="question-card__question"]',
+    );
+    const answerDisplay = cardElement.querySelector(
+      '[data-js="question-card__answer"]',
+    );
+
+    questionDisplay.textContent = person.name;
+    answerDisplay.textContent = person.species;
+    cardContainer.append(cardElement);
+  });
 }
-newAnswerButton.addEventListener("click", handleLikeButtonClick);
-*/
+
+// Backlog
+people.forEach((person) => {
+    const card = Card(person);
+    renderElement(card);
+
+    return cardElement;
+
+     const firstPerson = data.results[0];
+    */

@@ -74,8 +74,6 @@
   padding: 0.5rem;
   background-color: var(--secondary);
   border: none;
-<<<<<<< HEAD
-  color: var(--text-color-secondary);
 }
 
 .hidden {
@@ -87,7 +85,5 @@
 }
 
 .active-nav {
-=======
   color: var(--text-secondary);
->>>>>>> fcd789b3f82104891d04062bcbaa23b06deac859
 }
