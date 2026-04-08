@@ -37,12 +37,7 @@
   bottom: 0;
   left: 0;
   height: 0.5rem;
-<<<<<<< HEAD
-  width: 0;
-  background-color: var(--background-thirdly);
-=======
   width: 1%;
   background-color: var(--tertiary);
->>>>>>> fcd789b3f82104891d04062bcbaa23b06deac859
   transition: width 0.05s ease;
 }

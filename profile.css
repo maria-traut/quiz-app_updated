@@ -1,36 +1,6 @@
 .profile-card__list {
   padding: 1rem;
   max-width: 45rem;
-<<<<<<< HEAD
-  margin: 0 auto;
-}
-
-.profile-card__item {
-  display: grid;
-  gap: 0.5em;
-  background-color: var(--background-thirdly);
-  border-radius: 0.5rem;
-  padding: 3em 1.5em 1.5em 1.5em;
-  margin: 1em 1em;
-  border: 1px solid rgb(112, 103, 187);
-  position: relative;
-}
-
-.profile-card__picture {
-  height: 4rem;
-  width: auto;
-}
-
-.profile-card__settings {
-  display: grid;
-  gap: 0.5em;
-  background-color: var(--background-thirdly);
-  border-radius: 0.5rem;
-  padding: 3em 1.5em 1.5em 1.5em;
-  margin: 1em 1em;
-  border: 1px solid rgb(112, 103, 187);
-  position: relative;
-=======
   margin: 1rem auto 0.5rem auto;
 }
 
@@ -76,5 +46,4 @@
 
 .settings-card__settlings-list {
   list-style: none;
->>>>>>> fcd789b3f82104891d04062bcbaa23b06deac859
 }
