@@ -46,4 +46,13 @@
 
 .settings-card__settlings-list {
   list-style: none;
+  margin: 0;
+}
+
+.dark-mode-button {
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: rgb(247, 160, 174);
+  border: none;
+  padding: 1rem;
 }
