@@ -87,3 +87,9 @@
 .active-nav {
   color: var(--text-secondary);
 }
+
+html.dark-mode,
+html.dark-mode body {
+  background-color: #121212;
+  color: #ffffff;
+}

@@ -19,54 +19,56 @@
     </header>
 
     <main class="main-content">
-      <ul class="profile-card__list">
-        <article class="profile-card">
-          <img
-            class="profile-card__picture"
-            src="./assets/true_detective_rust_cohle.png"
-            alt="profile-picture"
-          />
-          <h3 class="profile-card__title">Rust Cohle</h3>
-          <p class="profile-card__aboute-me">
-            I’m a detective who sees the world stripped of illusion. Time is a
-            flat circle, and people move through it unaware, repeating the same
-            mistakes. I don’t believe in redemption, only in patterns and the
-            brief clarity you get from facing the dark without blinking. I
-            watch, I think, I endure - because that’s all there is.
-          </p>
-          <ul class="category-list">
-            <li>
-              <button class="category">
-                <img
-                  src="./assets/add.png"
-                  alt="added-questions-icon"
-                  width="15"
-                  height="15"
-                />
-                My Questions
-              </button>
-            </li>
-            <li>
-              <button class="category">
-                <img
-                  src="./assets/ribbon_dark.png"
-                  alt="bookmark-icon"
-                  width="15"
-                  height="15"
-                />
-                My Bookmarks
-              </button>
-            </li>
-          </ul>
-        </article>
+      <article class="profile-card">
+        <img
+          class="profile-card__picture"
+          src="./assets/true_detective_rust_cohle.png"
+          alt="profile-picture"
+        />
+        <h3 class="profile-card__title">Rust Cohle</h3>
+        <p class="profile-card__aboute-me">
+          I’m a detective who sees the world stripped of illusion. Time is a
+          flat circle, and people move through it unaware, repeating the same
+          mistakes. I don’t believe in redemption, only in patterns and the
+          brief clarity you get from facing the dark without blinking. I watch,
+          I think, I endure - because that’s all there is.
+        </p>
+        <ul class="category-list">
+          <li>
+            <button class="category">
+              <img
+                src="./assets/add.png"
+                alt="added-questions-icon"
+                width="15"
+                height="15"
+              />
+              My Questions
+            </button>
+          </li>
+          <li>
+            <button class="category">
+              <img
+                src="./assets/ribbon_dark.png"
+                alt="bookmark-icon"
+                width="15"
+                height="15"
+              />
+              My Bookmarks
+            </button>
+          </li>
+        </ul>
+      </article>
 
-        <div class="profile-card__settings">
-            <h3 class="settings-card__title">Settings</h3>
-          <ul class="settings-card__settlings-list">
-            <li><button class="category">Darkmode</button></li>
-          </ul>
-        </article>
-      </ul>
+      <div class="profile-card__settings">
+        <h3 class="settings-card__title">Settings</h3>
+        <button
+          type="button"
+          class="dark-mode-button"
+          data-js="dark-mode-button"
+        >
+          Darkmode
+        </button>
+      </div>
 
       <nav class="navbar" data-js="nav">
         <ul class="nav-links">
